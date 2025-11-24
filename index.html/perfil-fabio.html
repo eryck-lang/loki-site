@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Perfil de Fábio - Líder do grupo Ilusões de Loki">
+    <title>Perfil - Fábio | Ilusões de Loki</title>
+    <style>
+:root {
+    --color-primary: #013220;
+    --color-secondary: #d4af37;
+    --color-accent: #ffd700;
+    --color-text: #f5f5f5;
+    --color-bg-translucent: rgba(1, 50, 32, 0.92);
+    --color-bg-dark: rgba(1, 50, 32, 0.95);
+    --border-radius: 12px;
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.5);
+    --gradient-gold: linear-gradient(135deg, #d4af37 0%, #ffd700 100%);
+    --gradient-dark: linear-gradient(180deg, rgba(1, 50, 32, 0.95) 0%, rgba(1, 40, 25, 0.98) 100%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(135deg, #002818 0%, #013220 50%, #002818 100%);
+    background-image: url('assets/images/Imagem do WhatsApp de 2025-11-24 à(s) 12.13.27_052a14a1.jpg');
+    background-attachment: fixed;
+    color: var(--color-text);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+    line-height: 1.7;
+    padding: 20px;
+    min-height: 100vh;
+    position: relative;
+    font-size: 16px;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        radial-gradient(circle at 20% 30%, rgba(212, 175, 55, 0.03) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, rgba(255, 215, 0, 0.03) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+body.high-contrast {
+    --color-primary: #000000;
+    --color-secondary: #ffff00;
+    --color-accent: #ffffff;
+    --color-text: #ffffff;
+    --color-bg-translucent: rgba(0, 0, 0, 0.95);
+    --color-bg-dark: rgba(0, 0, 0, 0.98);
+    --gradient-gold: linear-gradient(135deg, #ffff00 0%, #ffffff 100%);
+    --gradient-dark: linear-gradient(180deg, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.98) 100%);
+    background: #000000 !important;
+}
+
+body.high-contrast::before {
+    display: none;
+}
+
+body.high-contrast .header::before {
+    display: none;
+}
+
+body.high-contrast .image-placeholder img,
+body.high-contrast .medal-placeholder img {
+    filter: contrast(1.5) brightness(1.1);
+}
+
+body.font-size-small {
+    font-size: 14px;
+}
+
+body.font-size-small h1 {
+    font-size: clamp(1.7rem, 5vw, 2.5rem);
+}
+
+body.font-size-small h2 {
+    font-size: clamp(1.4rem, 4vw, 2rem);
+}
+
+body.font-size-small h3 {
+    font-size: clamp(1.1rem, 3vw, 1.5rem);
+}
+
+body.font-size-small p,
+body.font-size-small .subtitle,
+body.font-size-small .btn-perfil,
+body.font-size-small .accessibility-btn,
+body.font-size-small .btn-voltar-site,
+body.font-size-small .accessibility-toggle,
+body.font-size-small .close-panel,
+body.font-size-small button,
+body.font-size-small li,
+body.font-size-small a,
+body.font-size-small span,
+body.font-size-small label,
+body.font-size-small input,
+body.font-size-small textarea {
+    font-size: 0.875em !important;
+}
+
+body.font-size-xsmall {
+    font-size: 12px;
+}
+
+body.font-size-xsmall h1 {
+    font-size: clamp(1.5rem, 4vw, 2.2rem);
+}
+
+body.font-size-xsmall h2 {
+    font-size: clamp(1.2rem, 3vw, 1.7rem);
+}
+
+body.font-size-xsmall h3 {
+    font-size: clamp(1rem, 2.5vw, 1.3rem);
+}
+
+body.font-size-xsmall p,
+body.font-size-xsmall .subtitle,
+body.font-size-xsmall .btn-perfil,
+body.font-size-xsmall .accessibility-btn,
+body.font-size-xsmall .btn-voltar-site,
+body.font-size-xsmall .accessibility-toggle,
+body.font-size-xsmall .close-panel,
+body.font-size-xsmall button,
+body.font-size-xsmall li,
+body.font-size-xsmall a,
+body.font-size-xsmall span,
+body.font-size-xsmall label,
+body.font-size-xsmall input,
+body.font-size-xsmall textarea {
+    font-size: 0.75em !important;
+}
+
+body.font-size-xxsmall {
+    font-size: 10px;
+}
+
+body.font-size-xxsmall h1 {
+    font-size: clamp(1.3rem, 3vw, 2rem);
+}
+
+body.font-size-xxsmall h2 {
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+}
+
+body.font-size-xxsmall h3 {
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
+}
+
+body.font-size-xxsmall p,
+body.font-size-xxsmall .subtitle,
+body.font-size-xxsmall .btn-perfil,
+body.font-size-xxsmall .accessibility-btn,
+body.font-size-xxsmall .btn-voltar-site,
+body.font-size-xxsmall .accessibility-toggle,
+body.font-size-xxsmall .close-panel,
+body.font-size-xxsmall button,
+body.font-size-xxsmall li,
+body.font-size-xxsmall a,
+body.font-size-xxsmall span,
+body.font-size-xxsmall label,
+body.font-size-xxsmall input,
+body.font-size-xxsmall textarea {
+    font-size: 0.625em !important;
+}
+
+body.font-size-large {
+    font-size: 18px;
+}
+
+body.font-size-large h1 {
+    font-size: clamp(2.2rem, 6vw, 3rem);
+}
+
+body.font-size-large h2 {
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
+}
+
+body.font-size-large h3 {
+    font-size: clamp(1.5rem, 4vw, 1.9rem);
+}
+
+body.font-size-large p,
+body.font-size-large .subtitle,
+body.font-size-large .btn-perfil,
+body.font-size-large .accessibility-btn,
+body.font-size-large .btn-voltar-site,
+body.font-size-large .accessibility-toggle,
+body.font-size-large .close-panel,
+body.font-size-large button,
+body.font-size-large li,
+body.font-size-large a,
+body.font-size-large span,
+body.font-size-large label,
+body.font-size-large input,
+body.font-size-large textarea {
+    font-size: 1.125em !important;
+}
+
+body.font-size-xlarge {
+    font-size: 20px;
+}
+
+body.font-size-xlarge h1 {
+    font-size: clamp(2.5rem, 7vw, 3.5rem);
+}
+
+body.font-size-xlarge h2 {
+    font-size: clamp(2rem, 6vw, 3rem);
+}
+
+body.font-size-xlarge h3 {
+    font-size: clamp(1.7rem, 5vw, 2.2rem);
+}
+
+body.font-size-xlarge p,
+body.font-size-xlarge .subtitle,
+body.font-size-xlarge .btn-perfil,
+body.font-size-xlarge .accessibility-btn,
+body.font-size-xlarge .btn-voltar-site,
+body.font-size-xlarge .accessibility-toggle,
+body.font-size-xlarge .close-panel,
+body.font-size-xlarge button,
+body.font-size-xlarge li,
+body.font-size-xlarge a,
+body.font-size-xlarge span,
+body.font-size-xlarge label,
+body.font-size-xlarge input,
+body.font-size-xlarge textarea {
+    font-size: 1.25em !important;
+}
+
+body.font-size-xxlarge {
+    font-size: 22px;
+}
+
+body.font-size-xxlarge h1 {
+    font-size: clamp(2.8rem, 8vw, 4rem);
+}
+
+body.font-size-xxlarge h2 {
+    font-size: clamp(2.3rem, 7vw, 3.5rem);
+}
+
+body.font-size-xxlarge h3 {
+    font-size: clamp(2rem, 6vw, 2.5rem);
+}
+
+body.font-size-xxlarge p,
+body.font-size-xxlarge .subtitle,
+body.font-size-xxlarge .btn-perfil,
+body.font-size-xxlarge .accessibility-btn,
+body.font-size-xxlarge .btn-voltar-site,
+body.font-size-xxlarge .accessibility-toggle,
+body.font-size-xxlarge .close-panel,
+body.font-size-xxlarge button,
+body.font-size-xxlarge li,
+body.font-size-xxlarge a,
+body.font-size-xxlarge span,
+body.font-size-xxlarge label,
+body.font-size-xxlarge input,
+body.font-size-xxlarge textarea {
+    font-size: 1.375em !important;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-bottom: 100px;
+    position: relative;
+    z-index: 1;
+}
+
+.header {
+    text-align: center;
+    margin: 20px 0 40px;
+    padding: 30px;
+    background: var(--gradient-dark);
+    border: 2px solid var(--color-secondary);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-lg);
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 0.8s ease-in;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(212, 175, 55, 0.1) 0%, transparent 70%);
+    animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.header > * {
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    color: var(--color-secondary);
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: clamp(2rem, 6vw, 3rem);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    font-weight: 800;
+}
+
+h2 {
+    color: var(--color-secondary);
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: clamp(1.6rem, 5vw, 2.4rem);
+    position: relative;
+    padding-bottom: 15px;
+    font-weight: 700;
+}
+
+h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: var(--gradient-gold);
+    border-radius: 2px;
+}
+
+h3 {
+    font-size: clamp(1.3rem, 4vw, 1.7rem);
+    margin: 20px 0 15px;
+    color: var(--color-secondary);
+    font-weight: 600;
+}
+
+.subtitle {
+    color: var(--color-text);
+    font-size: clamp(1.05rem, 3vw, 1.3rem);
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 500;
+    opacity: 0.95;
+}
+
+.section {
+    background: var(--gradient-dark);
+    border: 2px solid var(--color-secondary);
+    margin: 30px 0;
+    padding: 25px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+    position: relative;
+}
+
+.section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--gradient-gold);
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.section:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--color-accent);
+}
+
+.section:hover::before {
+    opacity: 1;
+}
+
+p {
+    margin: 14px 0;
+    font-size: 1rem;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+strong {
+    color: var(--color-secondary);
+    font-weight: 700;
+}
+
+.image-placeholder {
+    width: 280px;
+    height: 280px;
+    border: 3px dashed var(--color-secondary);
+    margin: 15px auto;
+    background: var(--color-bg-translucent);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+}
+
+.image-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: var(--transition);
+}
+
+.image-placeholder img:hover {
+    transform: scale(1.08);
+}
+
+.medal-placeholder {
+    width: 110px;
+    height: 110px;
+    margin: 8px;
+    background: var(--color-bg-translucent);
+    border: 3px solid var(--color-secondary);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    transition: var(--transition);
+    box-shadow: var(--shadow-sm);
+}
+
+.medal-placeholder:hover {
+    transform: rotate(360deg) scale(1.15);
+    border-color: var(--color-accent);
+    box-shadow: 0 0 15px var(--color-accent);
+}
+
+.medal-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.status,
+.levels {
+    width: 220px;
+    border: 2px solid var(--color-secondary);
+    padding: 15px;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    background: var(--color-bg-dark);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-sm);
+}
+
+.medals,
+.attacks {
+    width: 100%;
+    border: 2px solid var(--color-secondary);
+    margin: 15px 0;
+    padding: 20px;
+    background: var(--color-bg-dark);
+    box-sizing: border-box;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-sm);
+}
+
+.medals-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.weapon {
+    width: 280px;
+    margin: 0 auto;
+}
+
+.weapon .image-placeholder {
+    border: 3px dashed var(--color-secondary);
+    background: var(--color-bg-translucent);
+}
+
+.contact-section {
+    margin-top: 35px;
+    padding-top: 25px;
+    border-top: 2px solid var(--color-secondary);
+}
+
+.contact-section p {
+    margin: 10px 0;
+}
+
+.contact-section a {
+    color: var(--color-secondary);
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+    position: relative;
+}
+
+.contact-section a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--color-accent);
+    transition: var(--transition);
+}
+
+.contact-section a:hover {
+    color: var(--color-accent);
+}
+
+.contact-section a:hover::after {
+    width: 100%;
+}
+
+.btn-voltar-site {
+    position: fixed;
+    bottom: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--gradient-gold);
+    color: var(--color-primary);
+    border: none;
+    padding: 14px 28px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    z-index: 100;
+    transition: var(--transition);
+    box-shadow: var(--shadow-md);
+    text-transform: uppercase;
+}
+
+.btn-voltar-site:hover {
+    transform: translateX(-50%) translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(212, 175, 55, 0.5);
+}
+
+.accessibility-panel {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: var(--gradient-dark);
+    border: 2px solid var(--color-secondary);
+    border-radius: var(--border-radius);
+    padding: 20px;
+    z-index: 1000;
+    box-shadow: var(--shadow-lg);
+    max-width: 300px;
+    display: none;
+}
+
+.accessibility-panel.active {
+    display: block;
+    animation: slideUp 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.accessibility-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: var(--gradient-gold);
+    color: var(--color-primary);
+    border: none;
+    padding: 16px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 999;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+}
+
+.accessibility-toggle:hover {
+    transform: scale(1.15);
+    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.6);
+}
+
+.accessibility-panel h3 {
+    font-size: 1.2rem;
+    margin-bottom: 18px;
+    text-align: center;
+    color: var(--color-secondary);
+}
+
+.accessibility-btn {
+    width: 100%;
+    background: var(--gradient-gold);
+    color: var(--color-primary);
+    border: none;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: var(--transition);
+    font-size: 0.95rem;
+}
+
+.accessibility-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(212, 175, 55, 0.4);
+}
+
+.accessibility-btn:active {
+    transform: translateY(0);
+}
+
+.close-panel {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: transparent;
+    border: none;
+    color: var(--color-secondary);
+    font-size: 28px;
+    cursor: pointer;
+    padding: 0;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    transition: var(--transition);
+}
+
+.close-panel:hover {
+    color: var(--color-accent);
+    transform: rotate(90deg);
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 10px;
+        padding-bottom: 90px;
+    }
+
+    h1 {
+        font-size: clamp(1.6rem, 5vw, 2.2rem);
+    }
+
+    h2 {
+        font-size: clamp(1.3rem, 4vw, 1.8rem);
+    }
+
+    .header {
+        padding: 20px;
+    }
+
+    .section {
+        padding: 18px;
+        margin: 20px 0;
+    }
+
+    .status,
+    .levels {
+        width: 100%;
+        margin: 12px 0;
+    }
+
+    .image-placeholder {
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+        aspect-ratio: 1;
+    }
+
+    .accessibility-toggle {
+        bottom: 15px;
+        right: 15px;
+        width: 58px;
+        height: 58px;
+        font-size: 24px;
+    }
+
+    .accessibility-panel {
+        right: 15px;
+        bottom: 85px;
+        max-width: calc(100vw - 30px);
+    }
+
+    .btn-voltar-site {
+        width: calc(100% - 30px);
+        left: 15px;
+        transform: none;
+        bottom: 75px;
+    }
+
+    .btn-voltar-site:hover {
+        transform: translateY(-2px) scale(1.02);
+    }
+
+    .medal-placeholder {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+@media (max-width: 480px) {
+    .medal-placeholder {
+        width: 75px;
+        height: 75px;
+    }
+
+    .image-placeholder {
+        max-width: 240px;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Fábio</div>
+
+        <div class="section">
+            <div class="image-placeholder">
+                <img src="assets/images/characters/IMG-20250316-WA0007.jpg" alt="Foto de Fábio">
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="status">
+                <p class="subtitle">Status:</p>
+                <p>Vida: 65</p>
+                <p>Nível Total: 18</p>
+                <p>Moedas: 65</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="levels">
+                <p class="subtitle">Nível Por Classe:</p>
+                <p>Mago: 4</p>
+                <p>Mercador: 3</p>
+                <p>Artificer: 3</p>
+                <p>Cavaleiro: 3</p>
+                <p>Herói: 2</p>
+            </div>
+        </div>
+
+        <div class="medals">
+            <p class="subtitle">Espaço para Medalhas:</p>
+            <div class="medals-grid">
+                <div class="medal-placeholder"><img src="assets/images/medals/medalha1.png" alt="Medalha 1"></div>
+                <div class="medal-placeholder"><img src="assets/images/medals/medalha2.png" alt="Medalha 2"></div>
+                <div class="medal-placeholder"><img src="assets/images/medals/medalha3.png" alt="Medalha 3"></div>
+                <div class="medal-placeholder"><img src="assets/images/medals/medalha4.png" alt="Medalha 4"></div>
+                <div class="medal-placeholder"><img src="assets/images/medals/medalha5.png" alt="Medalha 5"></div>
+                <div class="medal-placeholder"><img src="assets/images/medals/medalha7.png" alt="Medalha 7"></div>
+            </div>
+        </div>
+
+        <div class="attacks">
+            <p class="subtitle">Ataques:</p>
+            <p>A - 10 de dano - sucata</p>
+            <p>2 - 9 de dano - habilidade do tridente</p>
+            <p>3 - 11 de dano</p>
+            <p>4 - 12 de dano</p>
+            <p>5 - 11 de dano</p>
+            <p>6 - 6 de dano</p>
+            <p>7 - 11 de dano - Cura 3 de todos quando eu quiser</p>
+            <p>8 - 9 de dano - habilidade do tridente</p>
+            <p>9 - 12 de dano</p>
+            <p>10 - 10 de dano - sucata</p>
+            <p>J - Luz negra - diminui 4 de dano por 3 turnos.</p>
+            <p>Q - Sexto sentido - revela uma carta pro grupo, pode descartar com direito a uma nova que será colocada independente da carta.</p>
+            <p>K - Contra Ataque - Bloqueia o ataque atual do oponente e causa o dobro de dano no próximo turno.</p>
+        </div>
+
+        <div class="section">
+            <div class="weapon">
+                <p class="subtitle">Martelo da Justiça</p>
+                <div class="image-placeholder">
+                    <img src="assets/images/weapons/martelo.png" alt="Martelo da Justiça">
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-section">
+            <p class="subtitle">Contatos:</p>
+            <p>Email: <a href="mailto:fabiofloresempr@gmail.com">fabiofloresempr@gmail.com</a></p>
+            <p>Linkedin: <a href="https://www.linkedin.com/in/f%C3%A1bio-flores-725b55314" target="_blank" rel="noopener noreferrer">Fábio Flores</a></p>
+            <p>Github: <a href="https://github.com/fabioflores174" target="_blank" rel="noopener noreferrer">Fábio Flores</a></p>
+        </div>
+    </div>
+
+    <button class="btn-voltar-site" onclick="window.location.href='index.html'" aria-label="Voltar ao site principal">Voltar ao Site</button>
+
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    initAccessibility();
+    initAnimations();
+});
+
+function initAccessibility() {
+    const accessibilityHTML = `
+        <button class="accessibility-toggle" aria-label="Abrir painel de acessibilidade" title="Acessibilidade">
+            ♿
+        </button>
+        <div class="accessibility-panel" role="region" aria-label="Painel de Acessibilidade">
+            <button class="close-panel" aria-label="Fechar painel">&times;</button>
+            <h3>Acessibilidade</h3>
+            <button class="accessibility-btn" id="increase-font" aria-label="Aumentar tamanho da fonte">
+                A+ Aumentar Fonte
+            </button>
+            <button class="accessibility-btn" id="decrease-font" aria-label="Diminuir tamanho da fonte">
+                A- Diminuir Fonte
+            </button>
+            <button class="accessibility-btn" id="toggle-contrast" aria-label="Alternar alto contraste">
+                ◐ Alto Contraste
+            </button>
+            <button class="accessibility-btn" id="reset-accessibility" aria-label="Resetar configurações">
+                ↻ Resetar
+            </button>
+        </div>
+    `;
+
+    document.body.insertAdjacentHTML('beforeend', accessibilityHTML);
+
+    const toggle = document.querySelector('.accessibility-toggle');
+    const panel = document.querySelector('.accessibility-panel');
+    const closeBtn = document.querySelector('.close-panel');
+    const increaseBtn = document.getElementById('increase-font');
+    const decreaseBtn = document.getElementById('decrease-font');
+    const contrastBtn = document.getElementById('toggle-contrast');
+    const resetBtn = document.getElementById('reset-accessibility');
+
+    let fontSize = 'normal';
+    let highContrast = false;
+
+    loadAccessibilitySettings();
+
+    toggle.addEventListener('click', () => {
+        const isActive = panel.classList.toggle('active');
+        toggle.setAttribute('aria-expanded', isActive);
+        if (isActive) {
+            toggle.style.display = 'none';
+        }
+    });
+
+    closeBtn.addEventListener('click', () => {
+        panel.classList.remove('active');
+        toggle.style.display = 'flex';
+        toggle.setAttribute('aria-expanded', 'false');
+    });
+
+    increaseBtn.addEventListener('click', () => {
+        if (fontSize === 'normal') {
+            fontSize = 'large';
+            document.body.className = document.body.className.replace(/font-size-\w+/g, '');
+            document.body.classList.add('font-size-large');
+        } else if (fontSize === 'large') {
+            fontSize = 'xlarge';
+            document.body.className = document.body.className.replace(/font-size-\w+/g, '');
+            document.body.classList.add('font-size-xlarge');
+        } else if (fontSize === 'xlarge') {
+            fontSize = 'xxlarge';
+            document.body.className = document.body.className.replace(/font-size-\w+/g, '');
+            document.body.classList.add('font-size-xxlarge');
+        }
+        if (highContrast) document.body.classList.add('high-contrast');
+        saveAccessibilitySettings();
+    });
+
+    decreaseBtn.addEventListener('click', () => {
+        if (fontSize === 'xxlarge') {
+            fontSize = 'xlarge';
+            document.body.className = document.body.className.replace(/font-size-\w+/g, '');
+            document.body.classList.add('font-size-xlarge');
+        } else if (fontSize === 'xlarge') {
+            fontSize = 'large';
+            document.body.className = document.body.className.replace(/font-size-\w+/g, '');
+            document.body.classList.add('font-size-large');
+        } else if (fontSize === 'large') {
+            fontSize = 'normal';
+            document.body.className = document.body.className.replace(/font-size-\w+/g, '');
+        } else if (fontSize === 'normal') {
+            fontSize = 'small';
+            document.body.className = document.body.className.replace(/font-size-\w+/g, '');
+            document.body.classList.add('font-size-small');
+        } else if (fontSize === 'small') {
+            fontSize = 'xsmall';
+            document.body.className = document.body.className.replace(/font-size-\w+/g, '');
+            document.body.classList.add('font-size-xsmall');
+        } else if (fontSize === 'xsmall') {
+            fontSize = 'xxsmall';
+            document.body.className = document.body.className.replace(/font-size-\w+/g, '');
+            document.body.classList.add('font-size-xxsmall');
+        }
+        if (highContrast) document.body.classList.add('high-contrast');
+        saveAccessibilitySettings();
+    });
+
+    contrastBtn.addEventListener('click', () => {
+        highContrast = !highContrast;
+        document.body.classList.toggle('high-contrast', highContrast);
+        saveAccessibilitySettings();
+    });
+
+    resetBtn.addEventListener('click', () => {
+        fontSize = 'normal';
+        highContrast = false;
+        document.body.className = '';
+        saveAccessibilitySettings();
+    });
+
+    function saveAccessibilitySettings() {
+        const settings = {
+            fontSize: fontSize,
+            highContrast: highContrast
+        };
+        localStorage.setItem('accessibilitySettings', JSON.stringify(settings));
+    }
+
+    function loadAccessibilitySettings() {
+        const savedSettings = localStorage.getItem('accessibilitySettings');
+        if (savedSettings) {
+            const settings = JSON.parse(savedSettings);
+            fontSize = settings.fontSize || 'normal';
+            highContrast = settings.highContrast || false;
+
+            document.body.className = '';
+            
+            if (fontSize !== 'normal') {
+                document.body.classList.add('font-size-' + fontSize);
+            }
+
+            if (highContrast) {
+                document.body.classList.add('high-contrast');
+            }
+        }
+    }
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && panel.classList.contains('active')) {
+            panel.classList.remove('active');
+            toggle.style.display = 'flex';
+        }
+    });
+}
+
+function initAnimations() {
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, observerOptions);
+
+    const sections = document.querySelectorAll('.section');
+    sections.forEach(section => {
+        section.style.opacity = '0';
+        section.style.transform = 'translateY(30px)';
+        section.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+        observer.observe(section);
+    });
+}
+    </script>
+</body>
+</html>

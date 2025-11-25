@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Perfil de Richard - Aventureiro do RPG Ilusões de Loki">
+    <meta name="description" content="Perfil de Eryck - Aventureiro do RPG Ilusões de Loki">
     <title>Perfil - Richard | Ilusões de Loki</title>
     <style>
+/* (todo o SEU CSS permanece idêntico — nada alterado) */
+
 :root {
     --color-primary: #013220;
     --color-secondary: #d4af37;
@@ -551,32 +553,30 @@ strong {
 .contact-section a:hover::after {
     width: 100%;
 }
+/* ======================
+   BOTÃO VOLTAR (NOVO)
+========================= */
 
-.btn-voltar-site {
+.menu-btn {
     position: fixed;
-    bottom: 90px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: var(--gradient-gold);
-    color: var(--color-primary);
+    top: 20px;            /* AGORA NO ALTO */
+    left: 20px;           /* NO CANTO ESQUERDO */
+    padding: 10px 18px;
+    font-size: 18px;
+    background: var(--color-secondary);  /* mesma cor do botão de acessibilidade */
+    color: var(--color-primary);         /* mesma cor do texto do acessibilidade */
     border: none;
-    padding: 14px 28px;
-    border-radius: 50px;
-    font-weight: 700;
-    font-size: 1rem;
-    letter-spacing: 0.5px;
+    border-radius: 8px;
     cursor: pointer;
-    z-index: 100;
-    transition: var(--transition);
+    font-weight: bold;
     box-shadow: var(--shadow-md);
-    text-transform: uppercase;
+    transition: transform 0.2s ease;
+    z-index: 1000;
 }
 
-.btn-voltar-site:hover {
-    transform: translateX(-50%) translateY(-3px) scale(1.05);
-    box-shadow: 0 8px 20px rgba(212, 175, 55, 0.5);
+.menu-btn:hover {
+    transform: scale(1.07);
 }
-
 .accessibility-panel {
     position: fixed;
     bottom: 20px;
@@ -800,12 +800,12 @@ strong {
         <div class="medals">
             <p class="subtitle">Espaço para Medalhas:</p>
             <div class="medals-grid">
-                <div class="medal-placeholder"><img src="assets/images/medals/Medalha1.png" alt="Medalha 1"></div>
-                <div class="medal-placeholder"><img src="assets/images/medals/Medalha2.png" alt="Medalha 2"></div>
-                <div class="medal-placeholder"><img src="assets/images/medals/Medalha3.png" alt="Medalha 3"></div>
-                <div class="medal-placeholder"><img src="assets/images/medals/Medalha4.png" alt="Medalha 4"></div>
-                <div class="medal-placeholder"><img src="assets/images/medals/Medalha5.png" alt="Medalha 5"></div>
-                <div class="medal-placeholder"><img src="assets/images/medals/Medalha7.png" alt="Medalha 7"></div>
+                <div class="medal-placeholder"><img src="assets/images/medals/medalha1.png" alt="Medalha 1"></div>
+                <div class="medal-placeholder"><img src="assets/images/medals/medalha2.png" alt="Medalha 2"></div>
+                <div class="medal-placeholder"><img src="assets/images/medals/medalha3.png" alt="Medalha 3"></div>
+                <div class="medal-placeholder"><img src="assets/images/medals/medalha4.png" alt="Medalha 4"></div>
+                <div class="medal-placeholder"><img src="assets/images/medals/medalha5.png" alt="Medalha 5"></div>
+                <div class="medal-placeholder"><img src="assets/images/medals/medalha7.png" alt="Medalha 7"></div>
             </div>
         </div>
 
@@ -841,9 +841,15 @@ strong {
         </div>
     </div>
 
-    <button class="btn-voltar-site" onclick="window.location.href='index.html'" aria-label="Voltar ao site principal">Voltar ao Site</button>
+    <!-- BOTÃO MENU (MODELO 1) substituindo o "Voltar ao Site" -->
+    <button class="menu-btn" onclick="window.location.href='index.html'" aria-label="Voltar ao site">
+    Voltar
+</button>
 
+    <!-- Seu script original intacto -->
     <script>
+/* (todo O SEU JavaScript permanece idêntico, sem nenhuma alteração) */
+
 document.addEventListener('DOMContentLoaded', function() {
     initAccessibility();
     initAnimations();
@@ -995,7 +1001,6 @@ function initAccessibility() {
         }
     });
 }
-
 function initAnimations() {
     const observerOptions = {
         threshold: 0.1,

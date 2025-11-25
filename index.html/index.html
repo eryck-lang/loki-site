@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Ilusões de Loki - Grupo do TCC do 3ºA de criação de jogos. Conheça O Túnel das Dádivas, um jogo de plataforma pixel art.">
     <title>Ilusões de Loki - O Túnel das Dádivas</title>
+
     <style>
 :root {
     --color-primary: #013220;
@@ -781,28 +782,115 @@ strong {
 }
     </style>
 </head>
+
 <body>
-    <div class="container">
-        <div class="header">
-            <img src="assets/images/logo/LOKI.png" alt="Logo Ilusões de Loki">
-            <p class="subtitle">Grupo do TCC do 3ºA de criação de jogos</p>
-        </div>
 
-        <div class="section" id="membros">
-            <h2>⋰ Membros ⋱</h2>
-            <p style="text-align: center;">
-                <strong>Líder:</strong> Fábio &nbsp;|&nbsp; Eryck &nbsp;|&nbsp; Richard
-            </p>
-            <div class="button-container">
-                <button class="btn-perfil" onclick="window.location.href='perfil-fabio.html'" aria-label="Ver perfil de Fábio">Perfil Fábio</button>
-                <button class="btn-perfil" onclick="window.location.href='perfil-eryck.html'" aria-label="Ver perfil de Eryck">Perfil Eryck</button>
-                <button class="btn-perfil" onclick="window.location.href='perfil-richard.html'" aria-label="Ver perfil de Richard">Perfil Richard</button>
-            </div>
-        </div>
+<!-- 🚨 MENU LATERAL ADICIONADO 🚨 -->
+<style>
+#menu-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: var(--gradient-gold);
+    color: var(--color-primary);
+    border: none;
+    padding: 14px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    z-index: 1500;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+}
 
-        <div class="section">
-            <h2>⋰ O Túnel das Dádivas ⋱</h2>
-            <h3>⋄ Introdução</h3>
+#menu-btn:hover {
+    transform: scale(1.1);
+    box-shadow: var(--shadow-lg);
+}
+
+#side-menu {
+    position: fixed;
+    top: 0;
+    left: -260px;
+    width: 240px;
+    height: 100%;
+    background: var(--gradient-dark);
+    border-right: 2px solid var(--color-secondary);
+    padding: 20px;
+    z-index: 1499;
+    transition: left 0.35s ease;
+    box-shadow: var(--shadow-lg);
+}
+
+#side-menu.open {
+    left: 0;
+}
+
+#side-menu h3 {
+    color: var(--color-secondary);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#side-menu a {
+    display: block;
+    background: var(--gradient-gold);
+    color: var(--color-primary);
+    padding: 12px;
+    text-decoration: none;
+    margin: 10px 0;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+#side-menu a:hover {
+    transform: scale(1.05);
+    box-shadow: var(--shadow-md);
+}
+</style>
+
+<button id="menu-btn">☰ Menu</button>
+
+<div id="side-menu">
+    <h3>Navegação</h3>
+    <a href="#membros">Membros</a>
+    <a href="#tunel">O Túnel das Dádivas</a>
+    <a href="#personagens">Personagens</a>
+    <a href="#imagens">Imagens do jogo</a>
+    <a href="#makingof">Making of</a>
+</div>
+
+<script>
+document.getElementById("menu-btn").addEventListener("click", () => {
+    document.getElementById("side-menu").classList.toggle("open");
+});
+</script>
+
+<!-- FIM DO MENU ADICIONADO -->
+
+<div class="container">
+    <div class="header">
+        <img src="assets/images/logo/LOKI.png" alt="Logo Ilusões de Loki">
+        <p class="subtitle">Grupo do TCC do 3ºA de criação de jogos</p>
+    </div>
+
+    <div class="section" id="membros">
+        <h2>⋰ Membros ⋱</h2>
+        <p style="text-align: center;">
+            <strong>Líder:</strong> Fábio &nbsp;|&nbsp; Eryck &nbsp;|&nbsp; Richard
+        </p>
+        <div class="button-container">
+            <button class="btn-perfil" onclick="window.location.href='perfil-fabio.html'">Perfil Fábio</button>
+            <button class="btn-perfil" onclick="window.location.href='perfil-eryck.html'">Perfil Eryck</button>
+            <button class="btn-perfil" onclick="window.location.href='perfil-richard.html'">Perfil Richard</button>
+        </div>
+    </div>
+    <div class="section" id="tunel">
+        <h2>⋰ O Túnel das Dádivas ⋱</h2>
+        <h3>⋄ Introdução</h3>
             <p>Você pertence a uma antiga e <strong>nobre família</strong> conhecida por um dom raro: a sorte. A linhagem carrega o símbolo de uma runa nórdica que representa prosperidade e fortuna — um presente que todos herdam ao atingirem a maioridade. No entanto, esse dom vem acompanhado de uma <strong>tradição:</strong> ao completar dezoito anos, cada membro da família deve enfrentar uma masmorra e <strong>provar ser digno de manter sua dádiva.</strong></p>
             <p>Nosso protagonista, <strong>Fehur</strong>, é um jovem dessa família, mas diferente dos demais — tímido, inseguro e um tanto medroso. Determinado a provar seu valor e finalmente ser aceito entre os seus, ele decide encarar sua prova. Para não se colocar em risco, escolhe um desafio que parece simples: uma masmorra chamada <strong>"O Túnel das Dádivas"</strong>. O nome soa inofensivo, quase acolhedor... mas o que Fehur não imagina é que este túnel guarda um <strong>segredo sombrio</strong> — ele não concede dádivas, ele as toma. E o primeiro preço cobrado será justamente aquilo que define sua linhagem: <strong>a sorte.</strong></p>
             
@@ -814,20 +902,20 @@ strong {
             <h3>⋄ Informações extras</h3>
             <p>O jogo apresenta um estilo <strong>cartunesco em pixel art</strong>, combinando leveza visual com uma atmosfera mística e enigmática. O design das fases foi criado para despertar curiosidade e tensão, enquanto a trilha sonora acompanha o ritmo crescente do desafio.</p>
             <p>Ao longo da jornada, Fehur aprenderá que sorte alguma substitui coragem, e que a verdadeira dádiva pode estar em encarar o perigo de frente. Assim começa a história de <strong>O Túnel das Dádivas</strong> — um caminho onde cada passo exige atenção, e cada vitória é conquistada com esforço e determinação.</p>
-        </div>
+    </div>
 
-        <div class="section">
-            <h2>⋰ Personagens ⋱</h2>
-            <h3>⋄ Fehu, O cavaleiro</h3>
+    <div class="section" id="personagens">
+        <h2>⋰ Personagens ⋱</h2>
+        <h3>⋄ Fehur, O cavaleiro</h3>
             <div style="text-align: center; margin: 20px 0;">
                 <img src="assets/images/characters/p1.png" alt="Fehu, o cavaleiro" style="max-width: 200px; height: auto;">
             </div>
             <p>Esse é você, um jovem cavaleiro que terá de se aventurar na masmorra que drena sua sorte. Um filho da família Fehur, uma das famílias mais nobres que vários reinos reconhecem. Para manter tal reconhecimento, é necessário que uma tradição de família seja feita. Na qual você tem muito medo de falhar.</p>
-        </div>
+    </div>
 
-        <div class="section">
-            <h2>⋰ Imagens do jogo ⋱</h2>
-            <div class="carousel-container">
+    <div class="section" id="imagens">
+        <h2>⋰ Imagens do jogo ⋱</h2>
+        <div class="carousel-container">
                 <div class="carousel-slide">
                     <img src="assets/images/game/Imagem do WhatsApp de 2025-11-24 à(s) 11.44.11_272cc428.jpg" alt="Cena 1 do jogo O Túnel das Dádivas">
                 </div>
@@ -840,20 +928,19 @@ strong {
                 <button class="prev" onclick="mudarSlide(-1)" aria-label="Imagem anterior">❮</button>
                 <button class="next" onclick="mudarSlide(1)" aria-label="Próxima imagem">❯</button>
             </div>
-        </div>
+        </div>            
 
-        <div class="section" id="makingof">
-            <h2>⋰ Making of ⋱</h2>
-            <h3>⋄ Vídeo</h3>
+    <div class="section" id="makingof">
+        <h2>⋰ Making of ⋱</h2>
+        <h3>⋄ Vídeo</h3>
             <p>
                 <a href="https://youtu.be/-0sXBwxIKxU?si=R89OOBx3w7809qGn" target="_blank" rel="noopener noreferrer" style="color: var(--color-secondary); text-decoration: none; font-weight: bold;">
                     🎮 Assista ao vídeo: "O Túnel das Dádivas" - jogo plataforma
                 </a>
             </p>
-        </div>
     </div>
-
-    <script>
+</div>
+<script>
 document.addEventListener('DOMContentLoaded', function() {
     initCarousel();
     initAccessibility();
@@ -1127,6 +1214,7 @@ function initAnimations() {
         });
     });
 }
-    </script>
+</script>
+
 </body>
 </html>
